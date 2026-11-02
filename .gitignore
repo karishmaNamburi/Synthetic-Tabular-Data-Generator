@@ -1,0 +1,38 @@
+# Environments
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Caches & Test Artefacts
+.pytest_cache/
+.coverage
+htmlcov/
+.cache
+
+# Streamlit Local Secrets & Cache
+.streamlit/secrets.toml
+
+# Models and Generated Checkpoints
+models/*.pkl
+models/*.pt
+!models/.gitkeep
+
+# Sensitive User Uploads (Never commit user data)
+data/uploads/*
+uploads/*
+*.tmp
+*.log
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini

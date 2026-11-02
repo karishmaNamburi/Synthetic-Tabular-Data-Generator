@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.stApp {
+    background-color: #F8FAFC;
+}
+
+/* Header Banner */
+.brand-header {
+    background: linear-gradient(135deg, #0B192C 0%, #1E3E62 100%);
+    padding: 24px 32px;
+    border-radius: 14px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    box-shadow: 0 10px 25px -5px rgba(11, 25, 44, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.brand-title {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    margin: 0;
+    color: #FFFFFF;
+}
+.brand-subtitle {
+    font-size: 13px;
+    color: #94A3B8;
+    margin: 4px 0 0 0;
+    font-weight: 500;
+}
+.badge-pill {
+    background: rgba(0, 141, 218, 0.2);
+    border: 1px solid #008DDA;
+    color: #38BDF8;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+/* Metric Cards Grid */
+.metric-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+}
+@media (max-width: 1200px) {
+    .metric-container { grid-template-columns: repeat(3, 1fr); }
+}
+@media (max-width: 768px) {
+    .metric-container { grid-template-columns: repeat(2, 1fr); }
+}
+.research-card {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+.research-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+    border-color: #CBD5E1;
+}
+.card-accent-strip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #008DDA, #41B06E);
+}
+.card-label {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #64748B;
+    margin-bottom: 6px;
+}
+.card-value {
+    font-size: 22px;
+    font-weight: 800;
+    color: #0B192C;
+    margin: 0;
+}
+.card-subtext {
+    font-size: 11px;
+    color: #94A3B8;
+    margin-top: 4px;
+}
+
+/* Boxes & Cards */
+.content-box {
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 14px;
+    padding: 24px;
+    box-shadow: 0 2px 10px rgba(15, 23, 42, 0.04);
+    margin-bottom: 24px;
+}
+.content-box-title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0B192C;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.theory-card {
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 16px;
+}
+.theory-card h4 {
+    color: #0B192C;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+
+.empty-state {
+    background: #F0F8FF;
+    border: 2px dashed #BAE6FD;
+    border-radius: 14px;
+    padding: 40px 24px;
+    text-align: center;
+    color: #0369A1;
+    margin: 20px 0;
+}
+.empty-state h3 {
+    color: #0B192C;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.empty-state p {
+    color: #475569;
+    font-size: 14px;
+    max-width: 500px;
+    margin: 0 auto 20px auto;
+}
+
+section[data-testid="stSidebar"] {
+    background-color: #0B192C !important;
+    border-right: 1px solid #1E3E62;
+}
+section[data-testid="stSidebar"] .stMarkdown, 
+section[data-testid="stSidebar"] p, 
+section[data-testid="stSidebar"] label,
+section[data-testid="stSidebar"] span {
+    color: #E2E8F0 !important;
+}
+.sidebar-brand {
+    padding: 16px 8px 24px 8px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #1E3E62;
+    margin-bottom: 20px;
+}
+.sidebar-brand-name {
+    font-size: 18px;
+    font-weight: 800;
+    color: #FFFFFF !important;
+    letter-spacing: -0.5px;
+}
+.sidebar-brand-sub {
+    font-size: 11px;
+    color: #38BDF8 !important;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.stButton > button {
+    background: linear-gradient(135deg, #0B192C 0%, #1E3E62 100%) !important;
+    color: #FFFFFF !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-radius: 8px !important;
+    padding: 8px 18px !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+}
+.stButton > button:hover {
+    background: linear-gradient(135deg, #1E3E62 0%, #008DDA 100%) !important;
+    transform: translateY(-1px) !important;
+    box-shadow: 0 4px 12px rgba(0, 141, 218, 0.3) !important;
+}
