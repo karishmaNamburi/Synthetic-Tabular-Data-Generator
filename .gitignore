@@ -18,8 +18,19 @@ __pycache__/
 htmlcov/
 .cache
 
-# Streamlit Local Secrets & Cache
+# Streamlit Local Secrets & Environment Configurations
 .streamlit/secrets.toml
+.env
+*.env
+.env.*
+
+# Credentials & Keys
+*.key
+*.pem
+*.token
+*.cert
+credentials.json
+client_secret*.json
 
 # Models and Generated Checkpoints
 models/*.pkl
@@ -31,6 +42,8 @@ data/uploads/*
 uploads/*
 *.tmp
 *.log
+*.sqlite
+*.db
 
 # Operating System Files
 .DS_Store
