@@ -3,7 +3,7 @@ Unit tests for data loader and dataset profiling module.
 """
 import pytest
 import pandas as pd
-from src.data_loader import load_csv, detect_column_types, profile_dataset
+from modules.data_loader import load_csv, detect_column_types, profile_dataset
 
 
 def test_load_csv_valid(tmp_path):

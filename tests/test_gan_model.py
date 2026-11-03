@@ -3,7 +3,7 @@ Unit and integration tests for CTGAN model training and generation.
 """
 import pytest
 import pandas as pd
-from src.gan_model import CTGANModel
+from modules.gan_model import CTGANModel
 
 
 def test_ctgan_fit_and_generate():

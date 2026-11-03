@@ -3,7 +3,7 @@ Unit tests for data preprocessor and metadata generation.
 """
 import pytest
 import pandas as pd
-from src.preprocessor import Preprocessor, build_sdv_metadata
+from modules.preprocessor import Preprocessor, build_sdv_metadata
 
 
 def test_preprocessor_imputation_and_deduplication():

@@ -3,7 +3,7 @@ Unit tests for data quality evaluation module.
 """
 import pytest
 import pandas as pd
-from src.evaluator import DataQualityEvaluator
+from modules.evaluator import DataQualityEvaluator
 
 
 def test_data_quality_evaluator():

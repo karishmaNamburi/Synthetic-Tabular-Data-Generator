@@ -3,7 +3,7 @@ Unit tests for empirical privacy and disclosure risk analysis module.
 """
 import pytest
 import pandas as pd
-from src.privacy_analyzer import PrivacyRiskAnalyzer
+from modules.privacy_analyzer import PrivacyRiskAnalyzer
 
 
 def test_privacy_analyzer():
